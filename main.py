@@ -86,4 +86,4 @@ def signup():
         }
 
 
-run(host="0.0.0.0", port=sys.argv[1:], reloader=True)
+run(host="0.0.0.0", port=sys.argv[1], reloader=True)
