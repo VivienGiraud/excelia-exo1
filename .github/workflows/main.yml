@@ -66,3 +66,6 @@ jobs:
           heroku_email: "heroku@viviengiraud.fr"
           heroku_app_name: "excelia-exo1"
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+
+      - name: Migrate DB
+        run: python3 ./migration.py
