@@ -1,6 +1,7 @@
 from bottle import route, run, template, request, response, redirect
 import sqlite3
 from helpers import addition, generate_cookie_value
+import sys
 
 
 @route("/addition/<a>/<b>")
@@ -85,4 +86,4 @@ def signup():
         }
 
 
-run(host="0.0.0.0", port=80, reloader=True)
+run(host="0.0.0.0", port=sys.argv[1:], reloader=True)
